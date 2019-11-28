@@ -2,7 +2,7 @@
   "git": {
     "tagName": "v${version}",
     "requireCleanWorkingDir": false,
-    "push": false
+    "push": true
   },
   "github": {
     "release": true
@@ -11,6 +11,6 @@
     "publish": false
   },
   "hooks": {
-    "after:bump": "yarn lerna --yes --ignore-changes ${version}"
+    "before:release": "yarn lerna --yes --amend ${version}"
   }
 }
