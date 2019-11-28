@@ -12,6 +12,6 @@
     "publish": false
   },
   "hooks": {
-    "before:release": "yarn lerna --yes --amend ${version}"
+    "before:beforeRelease": "yarn lerna --yes ${version}"
   }
 }
