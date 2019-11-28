@@ -9,5 +9,8 @@
   },
   "npm": {
     "publish": false
+  },
+  "hooks": {
+    "after:bump": "yarn lerna ${version}"
   }
 }
