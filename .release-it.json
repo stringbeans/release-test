@@ -1,6 +1,6 @@
 {
   "git": {
-    "tag": true,
+    "tag": false,
     "tagName": "v${version}",
     "requireCleanWorkingDir": false,
     "push": true
@@ -12,6 +12,6 @@
     "publish": false
   },
   "hooks": {
-    "before:release": "yarn lerna --yes --amend ${version}"
+    "after:version": "yarn lerna --yes --amend ${version}"
   }
 }
