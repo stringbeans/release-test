@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "release": "release-it"
+    "release": "release-it",
+    "lerna": "lerna version -m 'Release %v' --tag-version-prefix 'v'"
   },
   "dependencies": {
     "lerna": "^3.19.0",
