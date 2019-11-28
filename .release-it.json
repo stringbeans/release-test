@@ -1,0 +1,10 @@
+{
+  "git": {
+    "tagName": "v${version}",
+    "requireCleanWorkingDir": false,
+    "push": false
+  },
+  "github": {
+    "release": true
+  }
+}
