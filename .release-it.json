@@ -12,6 +12,6 @@
     "publish": false
   },
   "hooks": {
-    "after:release": "yarn lerna --yes ${version}"
+    "after:bump": "yarn --cwd=sub1 version ${version}"
   }
 }
