@@ -12,6 +12,6 @@
     "publish": false
   },
   "hooks": {
-    "after:bump": "yarn --cwd=sub1 version ${version}"
+    "after:bump": "yarn --cwd=sub1 version --new-version ${version}"
   }
 }
